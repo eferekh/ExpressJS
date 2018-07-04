@@ -1,0 +1,31 @@
+[{
+        "id": 1,
+        "name": "Elie Ferekh",
+        "email": "elieferekh@gmail.com",
+        "pictureID": 5
+    },
+    {
+        "id": 2,
+        "name": "Jonathan Doe",
+        "email": "jonathandoe@gmail.com",
+        "pictureID": 3
+    },
+    {
+        "id": 3,
+        "name": "Jane Doe",
+        "email": "janedoe@gmail.com",
+        "pictureID": 1
+    },
+    {
+        "id": 4,
+        "name": "John Smith",
+        "email": "johnsmith@gmail.com",
+        "pictureID": 4
+    },
+    {
+        "id": 5,
+        "name": "Angelina Mrad",
+        "email": "patymrad@gmail.com",
+        "pictureID": 2
+    }
+]
