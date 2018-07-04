@@ -21,6 +21,6 @@ app.get("/usersPictures", (req, res) => {
 
 app.use("/static", express.static("public"));
 
-app.listen("80". () => {
+app.listen("80", () => {
   console.log("Listening On Port 80.");
 });
