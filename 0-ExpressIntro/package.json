@@ -1,0 +1,13 @@
+{
+  "name": "Express-Intro",
+  "version": "1.0.0",
+  "description": "Introduction To Express",
+  "main": "6-HandlingPOSTRequests.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Elie Ferekh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
