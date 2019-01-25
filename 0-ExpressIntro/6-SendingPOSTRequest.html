@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sending POST Request To Express</title>
+</head>
+  
+<body>
+  <div class="form">
+    <input type="text" id="name" placeholder="Name" />
+    <button id="submitBtn">Submit</button>
+  </div>
+  
+  <div id="response"></div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#submitBtn").click(function () {
+        let name = $("#name").val();
+        let postData = {
+          name: name
+        };
+        
+        $.ajax({
+          url: `http://localhost:3000/api/courses`,
+          method: "POST",
+          data: postData,
+          success: function (data) {
+            let result = JSON.stringify(data);
+            $("#response").html(result);
+            console.log(data);
+          },
+          error: function () {
+            alert("Error Performing Request");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+  
+</html>
